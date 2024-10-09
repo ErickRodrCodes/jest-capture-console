@@ -1,0 +1,33 @@
+{
+  "name": "jest-capture-console",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/jest-capture-console/src",
+  "projectType": "library",
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "dist/{projectRoot}",
+        "currentVersionResolver": "git-tag"
+      }
+    }
+  },
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/jest-capture-console",
+        "tsConfig": "packages/jest-capture-console/tsconfig.lib.json",
+        "packageJson": "packages/jest-capture-console/package.json",
+        "main": "packages/jest-capture-console/src/index.ts",
+        "assets": ["packages/jest-capture-console/*.md"]
+      }
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  }
+}

@@ -1,34 +1,24 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "allowJs": false,
-    "allowSyntheticDefaultImports": true,
-    "composite": true,
-    "declaration": true,
-    "declarationMap": true,
-    "emitDeclarationOnly": true,
-    "emitDecoratorMetadata": false,
-    "esModuleInterop": true,
-    "experimentalDecorators": false,
-    "forceConsistentCasingInFileNames": true,
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "importHelpers": true,
-    "incremental": true,
-    "isolatedModules": true,
-    "lib": ["es2022"],
-    "noEmitOnError": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "pretty": true,
-    "removeComments": false,
-    "resolveJsonModule": false,
-    "skipDefaultLibCheck": false,
-    "skipLibCheck": true,
-    "sourceMap": false,
-    "strict": true,
-    "verbatimModuleSyntax": false,
     "target": "es2015",
     "module": "esnext",
-    "moduleResolution": "node"
-  }
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@erickrodrcodes/jest-capture-console": [
+        "packages/jest-capture-console/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
 }

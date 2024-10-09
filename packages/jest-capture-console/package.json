@@ -1,6 +1,20 @@
 {
   "name": "@erickrodrcodes/jest-capture-console",
+  "description": "Based on jest-fail-on-console. A Jest setup that helps you to warn or make your tests to fail if a console method is captured.",
   "version": "0.0.1",
+  "author": {
+    "name": "Erick Rodriguez",
+    "url": "https://github.com/ErickRodrCodes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ErickRodrCodes/jest-capture-console"
+  },
+  "keywords": [
+    "jest",
+    "console",
+    "test"
+  ],
   "dependencies": {
     "tslib": "^2.3.0",
     "@jest/globals": "^29.7.0"
