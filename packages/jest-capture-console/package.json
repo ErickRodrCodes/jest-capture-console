@@ -28,5 +28,6 @@
   ],
   "nx": {
     "name": "@erickrodrcodes/jest-capture-console"
-  }
+  },
+  "license":"MIT"
 }
