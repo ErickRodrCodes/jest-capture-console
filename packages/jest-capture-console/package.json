@@ -24,7 +24,8 @@
   "typings": "./src/index.d.ts",
   "files": [
     "src",
-    "!**/*.tsbuildinfo"
+    "!**/*.tsbuildinfo",
+    "!src/test"
   ],
   "nx": {
     "name": "@erickrodrcodes/jest-capture-console"
