@@ -2,7 +2,9 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "types": ["jest", "node"],
-    "module": "CommonJS"
+    "module": "CommonJS",
+    "sourceMap": false,
+    "declarationMap": false
   },
   "files": [],
   "include": [],
